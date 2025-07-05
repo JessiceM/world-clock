@@ -1,25 +1,25 @@
 function updateTime() {
 
-// Los Angeles
-let losAngelesElement = document.querySelector("#los-angeles");
-if (losAngelesElement) {
-let losAngelesDateElement = losAngelesElement.querySelector(".date");
-let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-let losAngelesTime = moment().tz("America/Los_Angeles");
+// Mexico City
+let mexicoCityElement = document.querySelector("#mexico-city");
+if (mexicoCityElement) {
+let mexicoCityDateElement = mexicoCityElement.querySelector(".date");
+let mexicoCityTimeElement = mexicoCityElement.querySelector(".time");
+let mexicoCityTime = moment().tz("America/Mexico_City");
 
-losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
-losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm:ss [<small>]A[</small>]");
+mexicoCityDateElement.innerHTML = mexicoCityTime.format("MMMM Do YYYY");
+mexicoCityTimeElement.innerHTML = mexicoCityTime.format("h:mm:ss [<small>]A[</small>]");
 }
 
-// Paris
-let parisElement = document.querySelector("#paris");
-if (parisElement) {
-let parisDateElement = parisElement.querySelector(".date");
-let parisTimeElement = parisElement.querySelector(".time");
-let parisTime = moment().tz("Europe/Paris");
+// madrid
+let madridElement = document.querySelector("#madrid");
+if (madridElement) {
+let madridDateElement = madridElement.querySelector(".date");
+let madridTimeElement = madridElement.querySelector(".time");
+let madridTime = moment().tz("Europe/Madrid");
 
-parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
-parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
+madridDateElement.innerHTML = madridTime.format("MMMM Do YYYY");
+madridTimeElement.innerHTML = madridTime.format("h:mm:ss [<small>]A[</small>]");
 }
 //Tokyo
 
@@ -27,6 +27,9 @@ parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
 }
 function updateCity(event) {
     let cityTimeZone = event.target.value;
+    if (cityTimeZone === "current") {
+        cityTimeZone = moment.tz.guess();
+    }
     // Bottom line removes the _ like in America/Los_Angeles and removes the [1] to only display the city
     let cityName = cityTimeZone.replace("_", " ").split("/")[1];
     // Grabs the value from Select options and gets the time zone for that value. It diplays in h2.
