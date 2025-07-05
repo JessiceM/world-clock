@@ -43,7 +43,7 @@ function updateCity(event) {
                     </div>
                     <div class="time">${cityTime.format("h:mm:ss ")}<small>${cityTime.format("A")}</small></div>
                 </div>
-                < a href="https://jcm-world-clock.netlify.app/">All Cities</a>`;
+                <a href="/">All Cities</a>`;
 }
 
 updateTime();
