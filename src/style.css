@@ -1,5 +1,6 @@
 body {
     /* background-color: #f9f7fe; */
+    cursor: url("compass.png"),auto;
     font-family: piedra, sans-serif;
     background-image: url('2913097.jpg');
     background-repeat: no-repeat;
@@ -8,12 +9,13 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 100px auto 60px;
     background: beige;
     padding: 30px;
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
     border-radius: 10px;
+     
 }
 
 select {
