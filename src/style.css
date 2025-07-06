@@ -1,20 +1,23 @@
 body {
-    background-color: #f9f7fe;
-    font-family: sans-serif;
+    /* background-color: #f9f7fe; */
+    font-family: piedra, sans-serif;
+    background-image: url('2913097.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .container {
     max-width: 600px;
-    margin: 60px auto;
-    background: white;
+    margin: 100px auto 60px;
+    background: beige;
     padding: 30px;
     box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
     border-radius: 10px;
-
-
 }
 
 select {
+    font-family: piedra, sans-serif;
     display: block;
     width: 100%;
     border-radius: 4px;
@@ -24,12 +27,12 @@ select {
 
 h1{
     text-align: center;
-    font-size: 36px; 
+    font-size: 48px; 
 }
 
 h2 {
     margin: 0 0 10px;
-    font-size: 28px;
+    font-size: 32px;
 }
 
 .city {
@@ -46,6 +49,7 @@ h2 {
 
 .date {
     opacity: 0.7;
+    font-size: 18px;
 }
 .time {
 font-size: 48px;
@@ -58,10 +62,25 @@ font-weight: bold;
     line-height: 36px;
 }
 
-
-
 footer{
+    background-color: beige;
     text-align: center;
     font-size: 17px;
     color: rgba(0,0,0,0.7);
+    max-width: 800px;
+    margin: auto;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(94, 33, 33);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.world-map{
+    text-align: center;
 }

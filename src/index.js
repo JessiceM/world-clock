@@ -11,7 +11,7 @@ mexicoCityDateElement.innerHTML = mexicoCityTime.format("MMMM Do YYYY");
 mexicoCityTimeElement.innerHTML = mexicoCityTime.format("h:mm:ss [<small>]A[</small>]");
 }
 
-// madrid
+// Madrid
 let madridElement = document.querySelector("#madrid");
 if (madridElement) {
 let madridDateElement = madridElement.querySelector(".date");
@@ -21,10 +21,31 @@ let madridTime = moment().tz("Europe/Madrid");
 madridDateElement.innerHTML = madridTime.format("MMMM Do YYYY");
 madridTimeElement.innerHTML = madridTime.format("h:mm:ss [<small>]A[</small>]");
 }
-//Tokyo
 
-//Sydney
+// Lagos
+let lagosElement = document.querySelector("#lagos");
+if (lagosElement) {
+let lagosDateElement = lagosElement.querySelector(".date");
+let lagosTimeElement = lagosElement.querySelector(".time");
+let lagosTime = moment().tz("Africa/Lagos");
+
+lagosDateElement.innerHTML = lagosTime.format("MMMM Do YYYY");
+lagosTimeElement.innerHTML = lagosTime.format("h:mm:ss [<small>]A[</small>]");
 }
+
+// Asia/Shanghai
+let shanghaiElement = document.querySelector("#shanghai");
+if (shanghaiElement) {
+    let shanghaiDateElement = shanghaiElement.querySelector(".date");
+    let shanghaiTimeElement = shanghaiElement.querySelector(".time");
+    let shanghaiTime = moment().tz("Asia/Shanghai");
+
+    shanghaiDateElement.innerHTML = shanghaiTime.format("MMMM Do YYYY");
+    shanghaiTimeElement.innerHTML = shanghaiTime.format("h:mm:ss [<small>]A[</small>]");
+}
+}
+
+
 function updateCity(event) {
     let cityTimeZone = event.target.value;
     if (cityTimeZone === "current") {
