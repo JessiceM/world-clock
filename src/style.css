@@ -1,6 +1,6 @@
 body {
     /* background-color: #f9f7fe; */
-    cursor: url("compass.png"),auto;
+    cursor: url("wind-rose.png"),auto; /* Image dimensions must by under 30 x 30 */
     font-family: piedra, sans-serif;
     background-image: url('2913097.jpg');
     background-repeat: no-repeat;
@@ -27,9 +27,15 @@ select {
     font-size: 18px;
 }
 
+.mayflower-ship {
+    height: 80px;
+    transform: translate(-20px, 5%);
+}
+
 h1{
     text-align: center;
     font-size: 48px; 
+    margin-top: 5px;
 }
 
 h2 {
