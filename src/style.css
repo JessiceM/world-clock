@@ -130,4 +130,8 @@ a:hover {
         display: block;
         width: 80%;
     }
+
+    footer {
+        max-width: 300px;
+    }
 }
