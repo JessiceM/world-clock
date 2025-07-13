@@ -92,3 +92,42 @@ a:hover {
 .world-map{
     text-align: center;
 }
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 250px;
+    }
+
+    .mayflower-ship {
+    height: 60px;
+}
+
+    .city {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    body {
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 36px;
+
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .time {
+        font-size: 36px;
+    }
+
+    select {
+        display: block;
+        width: 80%;
+    }
+}
