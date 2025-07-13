@@ -97,6 +97,7 @@ a:hover {
     .container {
         max-width: 250px;
         background: rgb(245, 245, 220, 0.90);
+        padding: 25px;
     }
 
     .mayflower-ship {
